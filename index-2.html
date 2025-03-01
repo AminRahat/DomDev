@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-200 max-w-7xl mx-auto px-8 py-4">
+    <nav class="flex justify-between bg-white rounded p-4 mb-6">
+      <div class="flex gap-2 items-center logo">
+        <img src="./assets/logo.png" alt="logo" />
+        <p class="text-xl">Dev<span class="font-bold">Board</span></p>
+      </div>
+      <button class="back btn btn-primary">Back to homepage</button>
+    </nav>
+    <main class="mb-4">
+      <h1 class="text-center font-bold text-4xl mb-8">Blogs</h1>
+      <div class="mb-4">
+        <div class="rounded bg-white p-4 text-md mb-4">
+          <p class="font-bold pb-2 border-dashed border-b-1 border-gray-300">
+            Question-1: What are the different ways to select an element in the
+            DOM ?
+          </p>
+          <p class="text-gray-500">
+            There are 5 ways in which you can select elements in a DOM using
+            selectors. getElementsByTagName(), getElementsByClassName(),
+            getElementById() ,querySelector() ,querySelectorAll()
+          </p>
+        </div>
+        <div class="rounded bg-white p-4 text-md mb-4">
+          <p class="font-bold pb-2 border-dashed border-b-1 border-gray-300">
+            Question-2:What is the difference between innerHTML, innerText, and
+            textContent ?
+          </p>
+          <p class="text-gray-500">
+            textContents is all text contained by an element and all its
+            children that are for formatting purposes only. innerText returns
+            all text contained by an element and all its child elements.
+            innerHtml returns all text, including html tags, that is contained
+            by an element.
+          </p>
+        </div>
+
+        <div class="rounded bg-white p-4 text-md mb-4">
+          <p class="font-bold pb-2 border-dashed border-b-1 border-gray-300">
+            Question-3: What is event delegation in the DOM?
+          </p>
+          <p class="text-gray-500">
+            Event Delegation is basically a pattern to handle events
+            efficiently. Instead of adding an event listener to each and every
+            similar element, we can add an event listener to a parent element
+            and call an event on a particular target using the .target property
+            of the event object.
+          </p>
+        </div>
+        <div class="rounded bg-white p-4 text-md mb-4">
+          <p class="font-bold pb-2 border-dashed border-b-1 border-gray-300">
+            Question-4 :What is event bubbling in the DOM?
+          </p>
+          <p class="text-gray-500">
+            Event bubbling is a mechanism where an event triggered on a child
+            element propagates upward through its ancestors in the DOM. It
+            allows parent elements to respond to events triggered by their child
+            elements.
+          </p>
+        </div>
+        <div class="rounded bg-white p-4 text-md mb-4">
+          <p class="font-bold pb-2 border-dashed border-b-1 border-gray-300">
+            Question 2 : How do you create, add, and remove elements using
+            JavaScript?
+          </p>
+          <p class="text-gray-500">
+            The process of displaying a newly created HTML element involves 3
+            steps: Create element. Example: const title =
+            document.createElement("h1"); Set Content / Attribute . Example:
+            title.textContent = 'Our new H1 element'; title.innerHTML = "Our new
+            H1 element" Insert element to the DOM using .append()
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.querySelector(".back").addEventListener("click", function () {
+        window.location.href = "./index.html";
+      });
+    </script>
+  </body>
+</html>

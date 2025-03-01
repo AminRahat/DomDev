@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="w-full bg-gray-200">
+    <div class="max-w-6xl mx-auto px-12 py-12">
+      <nav class="flex justify-between bg-white rounded p-4 mb-6">
+        <div class="flex gap-2 items-center logo">
+          <img src="./assets/logo.png" alt="logo" />
+          <p class="text-xl">Dev<span class="font-bold">Board</span></p>
+        </div>
+        <div class="flex gap-2 items-center buttons">
+          <div
+            class="flex gap-3 total-tasks bg-gray-200 rounded-full px-2 py-1"
+          >
+            <img src="./assets/checkbox.png" alt="tick" />
+            <p class="total-task text-xl font-bold">23</p>
+          </div>
+          <button class="theme-btn">
+            <img src="./assets/theme-btn.png" alt="" />
+          </button>
+        </div>
+      </nav>
+      <main class="flex gap-4 bg-white p-4 rounded">
+        <div class="main-body w-3/4">
+          <div
+            class="dash pb-4 border-b-2 border-gray-300 border-dashed flex justify-between grow gap-2"
+          >
+            <div
+              class="tasks-assigned bg-gray-200 flex gap-2 items-center rounded py-1 px-6"
+            >
+              <img
+                class="p-3 rounded-full bg-white"
+                src="./assets/checkbox.png"
+                alt="  "
+              />
+              <div class="tasks-left">
+                <p class="text-sm">Task Assigned</p>
+                <p class="task-number text-2xl font-bold">06</p>
+              </div>
+            </div>
+            <div
+              class="discover flex gap-1 items-center px-6 py-1 rounded bg-linear-to-bl from-blue-500 to-fuchsia-500"
+            >
+              <img src="./assets/board.png" alt="" />
+              <p>Discover Something New Today!</p>
+            </div>
+            <div
+              class="date-now rounded px-6 py-1 items-center flex gap-1 bg-gray-200"
+            >
+              <div class="rounded-full p-2 bg-white">
+                <img src="./assets/calender.png" alt="" />
+              </div>
+              <p class="date"></p>
+            </div>
+          </div>
+          <div class="task-list grid grid-cols-3 gap-2 mt-4">
+            <div class="card px-4 py-8 bg-gray-200 flex-col gap-2">
+              <p class="bg-white rounded text-sm w-max">ShopEase</p>
+              <h1 class="text-md font-bold">Fix Mobile Button Issue</h1>
+              <p class="text-sm bg-white text-gray-500 p-3 rounded">
+                Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="action flex gap-2 items-center justify-between">
+                <div class="deadline">
+                  <p class="text-gray-500">deadline</p>
+                  <p class="font-bold">21 march 2025</p>
+                </div>
+                <button class="btn btn-primary complete">Completed</button>
+              </div>
+            </div>
+            <div class="card px-4 py-8 bg-gray-200 flex-col gap-2">
+              <p class="bg-white rounded text-sm w-max">CloudSync</p>
+              <h1 class="text-md font-bold">Add Dark Mode</h1>
+              <p class="text-sm bg-white text-gray-500 p-3 rounded">
+                Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="action flex gap-2 items-center justify-between">
+                <div class="deadline">
+                  <p class="text-gray-500">deadline</p>
+                  <p class="font-bold">21 march 2025</p>
+                </div>
+                <button class="btn btn-primary complete">Completed</button>
+              </div>
+            </div>
+            <div class="card px-4 py-8 bg-gray-200 flex-col gap-2">
+              <p class="bg-white rounded text-sm w-max">SwiftPay</p>
+              <h1 class="text-md font-bold">Optimize Homepage</h1>
+              <p class="text-sm bg-white text-gray-500 p-3 rounded">
+                Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="action flex gap-2 items-center justify-between">
+                <div class="deadline">
+                  <p class="text-gray-500">deadline</p>
+                  <p class="font-bold">21 march 2025</p>
+                </div>
+                <button class="btn btn-primary complete">Completed</button>
+              </div>
+            </div>
+            <div class="card px-4 py-8 bg-gray-200 flex-col gap-2">
+              <p class="bg-white rounded text-sm w-max">Meta</p>
+              <h1 class="text-md font-bold">
+                Add new Emoji
+                <i class="fa-regular fa-face-smile" style="color: #ffd43b"></i>
+              </h1>
+              <p class="text-sm bg-white text-gray-500 p-3 rounded">
+                Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="action flex gap-2 items-center justify-between">
+                <div class="deadline">
+                  <p class="text-gray-500">deadline</p>
+                  <p class="font-bold">21 march 2025</p>
+                </div>
+                <button class="btn btn-primary complete">Completed</button>
+              </div>
+            </div>
+            <div class="card px-4 py-8 bg-gray-200 flex-col gap-2">
+              <p class="bg-white rounded text-sm w-max">Google LLc</p>
+              <h1 class="text-md font-bold">Integrate OpenAi API</h1>
+              <p class="text-sm bg-white text-gray-500 p-3 rounded">
+                Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="action flex gap-2 items-center justify-between">
+                <div class="deadline">
+                  <p class="text-gray-500">deadline</p>
+                  <p class="font-bold">21 march 2025</p>
+                </div>
+                <button class="btn btn-primary complete">Completed</button>
+              </div>
+            </div>
+            <div class="card px-4 py-8 bg-gray-200 flex-col gap-2">
+              <p class="bg-white rounded text-sm w-max">GlassDoor</p>
+              <h1 class="text-md font-bold">Improve Job searching</h1>
+              <p class="text-sm bg-white text-gray-500 p-3 rounded">
+                Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="action flex gap-2 items-center justify-between">
+                <div class="deadline">
+                  <p class="text-gray-500">deadline</p>
+                  <p class="font-bold">21 march 2025</p>
+                </div>
+                <button class="btn btn-primary complete">Completed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activity rounded p-4 w-1/4">
+          <div
+            class="text-center flex-col pb-4 border-b-2 border-gray-200 border-dashed"
+          >
+            <h2 class="title flex justify-center gap-2 mb-4">
+              <img src="./assets/activity.png" alt="" />
+              Activity Log
+            </h2>
+            <button class="clear btn btn-primary">Clear History</button>
+          </div>
+          <div class="records mt-4"></div>
+        </div>
+      </main>
+    </div>
+    <script src="./javasript.js"></script>
+  </body>
+</html>
